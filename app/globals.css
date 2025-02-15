@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-bg: #000;
+  --light-bg: #f6f7fb;
+  --primary-color: #533fd7;
+  --secondary-color: #00caf9;
+  --third-color: #54f3a6;
+  --fourth-color: #fee590;
+  --text-color: #867eb5;
+  --text-secondary: #554b92;
+  --text-color-dark: #12183f;
+  --text-color-light: #fcf3d4;
+  --title-color: #221577;
+  --border-color: #6a55f8;
+  --border-color-dark: #27263a;
+  --border-color-light: #6a55f8;
+  --color-cursor: 220, 90, 90;
+  --cursor-outline-shade: 0.3;
+  --cursor-size: 16px;
+  --cursor-outline-size: 16px;
+  --shadow: 10px 12px 48px rgba(181, 187, 203, 0.206);
+  --sm: 640px;
+  --md: 768px;
+  --lg: 1024px;
+  --xl: 1280px;
+  --xxl: 1536px; 
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  color: #867eb5;
+  color: var(--text-color);
+  margin: 0 !important;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0 !important;
+  touch-action: pan-y, pan-x;
+  transition: all 0.4s cubic-bezier(0.57, 0.25, 0.33, 1) 0s;
+}
+/* div{
+  outline: 3px solid orange;
+} */
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 2100px) {
+  .container {
+    max-width: 1600px;
+  }
+}
